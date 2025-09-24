@@ -72,3 +72,12 @@ These tools are helpful across all tracks:
 
 💡 **Tip:** Keep this main README open as your starting point. Navigate to each track for detailed instructions, resources, and implementation guides.
 
+---
+
+## 🔗 Connect / Follow Me
+
+Stay updated and get more insights on these projects:
+
+- **Instagram:** [@i.amparas](https://www.instagram.com/i.amparas)
+- **LinkedIn:** [Paras Atal](https://www.linkedin.com/in/parasatal)
+- **YouTube:** [Paras Atal](https://www.youtube.com/@i.amparas )
