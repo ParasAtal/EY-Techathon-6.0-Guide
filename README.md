@@ -12,7 +12,7 @@ Click on any track below to explore the detailed README and resources.
 | Track | Description | Access |
 |-------|-------------|--------|
 | **Automotive** | Predictive maintenance for vehicles using real-time data, historical logs, and AI orchestration. | [Open Automotive Track](./AUTOMOTIVE/README.md) |
-| **FMCG** | Automate B2B RFP response process for wires, cables, and industrial products using Sales & Technical Agents. | [Open FMCG Track](./FCMG/README.md) |
+| **FMCG** | Automate B2B RFP response process for wires, cables, and industrial products using Sales & Technical Agents. | [Open FMCG Track](./FMCG/README.md) |
 | **Retail** | Intelligent customer engagement, inventory management, and personalized recommendations with multi-agent AI. | [Open Retail Track](./RETAIL/README.md) |
 | **IT/BPM - Healthcare Providers** | AI-powered provider data validation, enrichment, and directory management to improve accuracy and compliance. | [Open IT/BPM Track](./IT_BPM/README.md) |
 | **PHARMA** | Agentic AI solution to streamline drug trials, regulatory reporting, and market research for pharmaceutical businesses. | [Open PHARMA Track](./PHARMA/README.md) |
