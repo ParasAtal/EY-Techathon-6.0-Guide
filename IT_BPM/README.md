@@ -1,0 +1,86 @@
+- [Problem Statement](#problem-statement)
+- [Existing Tools / Research & How They Compare](#existing-tools--research--how-they-compare)
+- [Gaps & Opportunities](#gaps--opportunities)
+- [Deliverables for Techathon](#deliverables-for-techathon)
+- [Suggested Tools / Integration Resources](#suggested-tools--integration-resources)
+
+---
+
+## 🧾 Problem Statement
+
+This project focuses on improving provider data accuracy, reducing manual verification efforts, and streamlining healthcare provider directory management for healthcare payers.
+
+Current workflow challenges:
+
+- Provider directories contain 40–80% inaccurate contact information.
+- Manual verification is labor-intensive and requires calling hundreds of providers.
+- Multiple data entry points lead to inconsistencies across directories, apps, and printed materials.
+- Credential verification delays provider onboarding, impacting member satisfaction.
+- Regulatory compliance demands frequent updates with minimal automation.
+
+The solution uses **Agentic AI** to orchestrate multiple Worker Agents:
+
+- **Data Validation Agent:** Automatically validates provider contact information via web scraping and public APIs.
+- **Information Enrichment Agent:** Collects additional data on providers such as certifications, specialties, and network affiliations.
+- **Quality Assurance Agent:** Detects inconsistencies, flags potential errors, and assigns confidence scores.
+- **Directory Management Agent:** Updates the directory across multiple formats, prioritizes human review, and generates reports.
+- **Master Agent:** Coordinates all Worker Agents and provides actionable dashboards for stakeholders.
+
+Goal: Automate provider data validation, enrichment, and quality assurance while maintaining compliance and scalability.
+
+---
+
+## 🔧 Existing Tools / Research & How They Compare
+
+| **Name / Project** | **What It Does** | **Overlap with Project** | **Limitations / Gaps** | **Resource Link** |
+|--------------------|------------------|--------------------------|------------------------|-------------------|
+| **NPI Registry API** | Provides official provider contact information, specialties, and licenses | Core provider data verification | Limited to US NPI data | [NPI Registry](https://npiregistry.cms.hhs.gov/) |
+| **Epic Systems Provider Data Solutions** | Automates provider data validation in hospitals | Supports Data Validation & Directory Management Agents | Proprietary; not publicly available | [Epic Provider Directory](https://www.epic.com/software#provider-directory) |
+| **Kyruus ProviderMatch** | AI-driven provider search and matching platform | Supports Information Enrichment & QA Agents | Commercial; limited demo options | [Kyruus](https://kyruus.com/product/provider-match/) |
+| **InterSystems HealthShare Provider Directory** | Unified provider directory with automated updates | Supports Directory Management Agent | Enterprise solution; integration complexity | [HealthShare](https://www.intersystems.com/products/healthshare/) |
+| **AI-Powered Healthcare Search (Paper)** | Discusses AI for accurate provider search and data enrichment | Supports Data Validation & Information Enrichment Agents | Academic; implementation required | [Kyruus Research](https://kyruushealth.com/ai-powered-healthcare-search-and-provider-data/) |
+| **Improving Health Plan Provider Directories (Paper)** | Highlights challenges and AI approaches to improve directory accuracy | Supports QA & Directory Management Agents | Academic; limited demo | [AMA Paper](https://www.ama-assn.org/system/files/improving-health-plan-provider-directories.pdf) |
+
+---
+
+## 🧭 Gaps & Opportunities
+
+- **Automated Provider Validation:** Replace manual verification with AI-powered web scraping and API checks.
+- **Data Enrichment:** Collect and consolidate specialty, license, and network affiliation data.
+- **Quality Assurance:** Detect and flag inconsistencies, producing confidence scores.
+- **Unified Directory:** Automatically update multiple formats and prioritize human review.
+- **Scalability:** Handle hundreds of provider validations per hour with minimal manual intervention.
+
+---
+
+## 🎯 Deliverables for Techathon
+
+- **Provider Validation:** Demonstrate automated validation of provider contact info from public sources.
+- **Data Enrichment:** Show enrichment of provider profiles with specialties, licenses, and certifications.
+- **Quality Assurance:** Present confidence scores and flagged providers needing manual review.
+- **Directory Management:** Display automated updates to a unified provider directory across formats.
+- **Master Agent Coordination:** Demonstrate orchestration between all agents.
+- **Visualization:** Dashboards showing KPIs, validation accuracy, and provider profile status.
+- **Demonstration:** Live or recorded video (max 4 minutes) showcasing the end-to-end workflow.
+
+---
+
+## 🧪 Suggested Tools / Integration Resources
+
+| **Tool / Resource** | **Purpose** | **Link** |
+|---------------------|-------------|----------|
+| **Python** | Main programming language for scripting agents | [Python](https://www.python.org/) |
+| **BeautifulSoup / Selenium** | Web scraping provider websites | [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/) / [Selenium](https://www.selenium.dev/) |
+| **Requests / Pandas / NumPy** | Data extraction, processing, and manipulation | [Requests](https://requests.readthedocs.io/) / [Pandas](https://pandas.pydata.org/) / [NumPy](https://numpy.org/) |
+| **OpenAI API / Hugging Face** | NLP for data validation, extraction, and matching | [OpenAI](https://platform.openai.com/) / [Hugging Face](https://huggingface.co/) |
+| **SQLite / PostgreSQL** | Store provider datasets and track validations | [SQLite](https://www.sqlite.org/) / [PostgreSQL](https://www.postgresql.org/) |
+| **Flask / FastAPI** | Build dashboards and REST API endpoints | [Flask](https://flask.palletsprojects.com/) / [FastAPI](https://fastapi.tiangolo.com/) |
+| **Google Maps API** | Verify practice location and phone numbers | [Google Maps API](https://developers.google.com/maps) |
+| **State Licensing Boards / Public APIs** | License verification and credential checks | Example: [California Board of Medicine](https://www.mbc.ca.gov/) |
+| **ReportLab / Matplotlib / Plotly** | Visualization and report generation | [ReportLab](https://www.reportlab.com/) / [Matplotlib](https://matplotlib.org/) / [Plotly](https://plotly.com/) |
+| **Cron / Celery** | Task scheduling for automated validation cycles | [Celery](https://docs.celeryq.dev/en/stable/) |
+
+---
+
+If you need assistance with setting up the project structure or have any other questions, feel free to ask!
+
